@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>RoboNerF Workshop: Neural Fields in Robotics</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="css/css-bootstrap.min.css">
+    <link rel="stylesheet" href="css/css-LineIcons.3.0.css">
+    <link rel="stylesheet" href="css/css-animate.css">
+    <link rel="stylesheet" href="css/css-tiny-slider.css">
+    <link rel="stylesheet" href="css/css-main.css">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F50BC5GG8Y"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-F50BC5GG8Y');
+</script>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="images/logo-logo.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a id="home-nav" href="#home-section" class="active"
+                                            onclick="switch_nav(MainNav.Home)" aria-label="Toggle navigation">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="overview-nav" href="#overview-section"
+                                            onclick="switch_nav(MainNav.Submission)"
+                                            aria-label="Toggle navigation">Overview</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="submission-nav" href="#submission-section"
+                                            onclick="switch_nav(MainNav.Submission)"
+                                            aria-label="Toggle navigation">Paper submission</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="speakers-nav" href="#speakers-section"
+                                            onclick="switch_nav(MainNav.Speakers)"
+                                            aria-label="Toggle navigation">Speakers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="organizers-nav" href="#organizers-section"
+                                            onclick="switch_nav(MainNav.Organizers)"
+                                            aria-label="Toggle navigation">Organizers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="dates-nav" href="#dates-section" onclick="switch_nav(MainNav.Dates)"
+                                            aria-label="Toggle navigation">Dates</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="schedule-nav" href="#schedule-section"
+                                            onclick="switch_nav(MainNav.Schedule)"
+                                            aria-label="Toggle navigation">Program</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="contact-nav" href="mailto:muhammadzubairirshad@gmail.com"
+                                            aria-label="Toggle navigation">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Hero Area -->
+    <section class="hero-area" id="home-section">
+        <div class="main__circle"></div>
+        <div class="main__circle2"></div>
+        <div class="main__circle3"></div>
+        <div class="main__circle4"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 offset-lg-3 col-md-12 col-12">
+                    <div class="hero-content">
+                        <h5 class="wow zoomIn" data-wow-delay=".2s"><i class="lni lni-map-marker"></i> ICRA 2024 -
+                            Yokohama, Japan</h5>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">RoboNerF: 1<sup>st</sup> Workshop on Neural
+                            Fields in Robotics</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">First workshop on Neural Fields in Robotics, hosted
+                            at <a href="https://2024.ieee-icra.org/">#ICRA2024</a>.</p>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">ICRA conference site: <a
+                                href="https://2024.ieee-icra.org/">2024.ieee-icra.org</a>
+                            (requires ICRA registration)</p>
+
+                        <div class="button wow fadeInUp" data-wow-delay=".8s">
+                            <a href="#main-section" class="btn ">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Area -->
+
+    <!-- Start Count Down Area -->
+    <!-- <div class="count-down">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="box-head">
+                        <div class="box-content">
+                            <div class="box">
+                                <h1 id="days">000</h1>
+                                <h2 id="daystxt">Days</h2>
+                            </div>
+                            <div class="box">
+                                <h1 id="hours">00</h1>
+                                <h2 id="hourstxt">Hours</h2>
+                            </div>
+                            <div class="box">
+                                <h1 id="minutes">00</h1>
+                                <h2 id="minutestxt">Minutes</h2>
+                            </div>
+                            <div class="box">
+                                <h1 id="seconds">00</h1>
+                                <h2 id="secondstxt">Secondes</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- End Count Down Area -->
+
+    <!-- Start Features Area -->
+
+
+    <!-- <section class="challenge section" id="main-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Challenge</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">3DCoMPaT Challenge</h2>
+                    </div>
+
+                    Challenge section
+                    <div class="section-text-content">
+                         add a centered image here
+                        <img src="images/_figures-anim_header.gif" class="img-fluid" alt="3DCoMPaT dataset"
+                            style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
+
+                        <h4>Challenge overview</h4>
+
+                        trunk-ignore(git-diff-check/error)
+                        The Grounded CoMPaT Recognition (GCR) is a compositional 3D vision task that aims to
+                        collectively recognize and ground compositions of materials on parts of 3D objects.
+                        This task is based on the 3DCoMPaT dataset, a large-scale dataset composed of stylized 3D
+                        objects and associated 2D renderings.
+
+
+                        We propose two variations of this task:
+                        <a href="https://3dcompat-dataset.org/doc/annotations.html#part-annotations" class="badge"
+                            style="background-color:#d20a78;">GCR-Coarse</a>
+                        and
+                        <a href="https://3dcompat-dataset.org/doc/annotations.html#part-annotations" class="badge"
+                            style="background-color:#F20487;">GCR-Fine</a>,
+                        which are based on coarse-grained and fine-grained 3D segmentations of the 3DCoMPaT models.
+
+
+                        We highly encourage participants of the challenge to enter and submit to both tracks of the
+                        challenge.
+
+
+
+                        <h4>&#128202; Dataset</h4>
+
+                        The 3DCoMPaT dataset for both challenge tracks is available through our <a
+                            href="https://3dcompat-dataset.org/doc/dl-dataset.html#challenge">download page</a>.
+
+
+
+                        <h4>&#128232; Submission</h4>
+
+                        Submission will be made through the <a
+                            href="https://eval.ai/web/challenges/challenge-page/2031">eval.ai platform</a>.
+
+
+
+                        <h4>&#128220; Rules</h4>
+
+                        Here are the rules for the challenge:
+
+
+
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><b>Submission Limit:</b> Each participant is allowed to submit
+                                their solution a maximum of three times per day.</li>
+                            <li class="list-group-item"><b>Data Usage:</b> Participants are not permitted to use any
+                                data other than the 3DCoMPaT data for training their models.</li>
+                            <li class="list-group-item"><b>Technical Report:</b> Each participant must submit a
+                                technical report detailing their methods, which will be made public, in order to be
+                                eligible for any prizes or rewards.</li>
+                        </ul>
+
+
+
+                        <h4>&#127942; Awards</h4>
+
+                        Total prize pool: <b>$3000</b>. Teams are encouraged to particpate to both challenge tracks.
+
+                        <div style="margin-top: 2em; margin-bottom: 0.5em; color: #F20487;"><b>Fine track:</b></div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><b>1st:</b> $1300</li>
+                            <li class="list-group-item"><b>2nd:</b> $700</li>
+                        </ul>
+
+                        <div style="margin-top: 1em; margin-bottom: 0.5em; color: #d20a78;"><b>Coarse track:</b></div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><b>1st:</b> $700</li>
+                            <li class="list-group-item"><b>2nd:</b> $300</li>
+                        </ul>
+
+
+                        These prizes are designed to motivate participants to put their best effort into the challenge
+                        and to reward those who perform exceptionally well. The challenge organizers hope that these
+                        prizes will encourage a high level of participation and help to drive innovation in the field of
+                        3D computer vision.
+                        It should be noted that eligibility for these prizes is contingent on participants adhering to
+                        the rules of the challenge. Therefore, participants must submit their solutions in accordance
+                        with the rules and provide a technical report detailing their methods to be considered for any
+                        prizes or rewards.
+
+
+
+                        <h4>&#128172; Q&amp;A</h4>
+
+
+                        If you encounter any technical issue related to the challenge, or if you're missing critical
+                        information, please open a ticket on our <a
+                            href="https://github.com/Vision-CAIR/3DCoMPaT-v2">GitHub repository</a>.
+                    </div>
+                </div>
+            </div> -->
+
+    <div class="row" id="overview-section">
+        <div class="col-12">
+            <div class="section-title">
+                <br><br>
+                <h3 class="wow zoomIn" data-wow-delay=".2s">Overview</h3>
+                <h2 class="wow fadeInUp" data-wow-delay=".4s">Workshop Details</h2>
+            </div>
+            <!-- Challenge section-->
+            <!-- <div class="section-text-content">
+                The ”Neural Fields in Robotics” workshop aims to explore the role and potential of implicit neural
+                representations (INRs) and NeRFs in various robotics domains, including 6D object pose estima-
+                tion, simultaneous localization and mapping (SLAM), manipulation with reinforcement learning (RL),
+                object reconstruction, physics modeling, and planning/navigation. By leveraging recent ad-
+                vancements in computer vision, such as neural radiance fields (NeRFs) and deep Signed Distance
+                Functions (DeepSDFs), this workshop aims to foster discussions and collaborations in the robotics
+                community regarding the impacts and possibilities of INRs.
+
+                <br><br>
+                Through invited talks and a poster session, the workshop will address several key topics, including 1.
+                the advantages of implicit neural scene representations beyond reconstruction for the robotics con-
+                text 2. trade-offs between an implicit and explicit representation for robotics applications like manip-
+                ulation/SLAM and navigation 3. online training of neural fields for robotics and the speed/efficiency
+                trade-offs and 4. balancing fully-implicit representations which are less interpretable with hybrid
+                neural field based representations which offer more interpretability such as voxel grid-based recon-
+                struction. This workshop would encourage these main questions and foster much more discussion
+                on the breadth (application) and depth (algorithms development) of neural fields for leveraging INRs
+                and Neural Fields for tasks like localization, motion planning, manipulation, locomotion, semantic
+                scene understanding as well as adapting INRs to simulate and predict dynamic and uncertain scenes
+
+            </div> -->
+
+            <div class="section-text-content">
+                Welcome to the
+                <a href="https://2024.ieee-icra.org/" class="badge" style="background-color:#d20a78;">ICRA 2024</a>
+                Workshop on Neural Fields in Robotics!
+                <br><br>
+                This workshop aims to explore the role and potential of Neural Fields i.e. in various robotics domains,
+                including 6D
+                object pose estimation, SLAM, manipulation with reinforcement learning (RL), object reconstruction,
+                neural implicit data generation, few-view scene reconstruction, camera calibration, physics modeling,
+                and planning/navigation. By leveraging recent advancements in computer vision, such as neural radiance
+                fields (NeRFs) and deep Signed Distance Functions (DeepSDFs), this workshop aims to foster discussions
+                and collaborations in the robotics community.
+
+                <br><br>
+                Through invited and selected spotlight talks as well as a room for discussions, the workshop will
+                address several key topics:
+                <ul style="list-style-type: disc; padding-left: 20px;">
+                    <li>The advantages of neural fields beyond reconstruction for the robotics context</li>
+                    <li>Trade-offs between an implicit and explicit representation</li>
+                    <li>Online training of neural fields and the speed/efficiency trade-offs</li>
+                    <li>Balancing fully-implicit representations which are less interpretable with hybrid neural field
+                        based representations which offer more interpretability</li>
+                </ul>
+                <br>
+                <!-- Older Version? -->
+                <!-- This workshop would encourage these main questions and foster much more discussion on the breadth
+                (application) and depth (algorithms development) of neural fields for leveraging INRs and Neural Fields
+                for tasks like localization, motion planning, manipulation, locomotion, semantic scene understanding as
+                well as adapting INRs to simulate and predict dynamic and uncertain scenes. -->
+                By facilitating knowledge exchange and exploration, we hope the workshop sparks interest in neural
+                fields for robotics, shaping the future of the field and driving innovation in perception, planning, and
+                control systems.
+                <br><br>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <div class="row" id="submission-section">
+        <div class="col-12">
+            <div class="section-title">
+                <br><br>
+                <h3 class="wow zoomIn" data-wow-delay=".2s">Paper Submission</h3>
+                <h2 class="wow fadeInUp" data-wow-delay=".4s">Call for Papers</h2>
+            </div>
+
+            <!-- Challenge section-->
+            <div class="section-text-content">
+                <h4>&#128218; Topics</h4>
+                <br><br>
+                The RoboNerF workshop will accept papers in relation to the application of neural fields and implicit
+                representation to robotics areas.
+                <!-- The workshop will include a poster and an oral session for related works. -->
+
+
+                Topics of this workshop include but are not limited to:
+                <br><br>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Neural Fields for Real-time Robotics Appplications </li>
+                    <li class="list-group-item">NeRFs and Implicit Representations for SLAM</li>
+                    <li class="list-group-item">Implicit Grasping for Manipulation</li>
+                    <li class="list-group-item">6D Pose Wstimation using Implicit Dields</li>
+                    <li class="list-group-item">Mobile Robot Navigation using Implicit Dunctions</li>
+                    <li class="list-group-item">Efficient Hybrid Representations for 3D Scene Understanding</li>
+                    <li class="list-group-item">Articulated Object Reconstruction and Manipulation </li>
+                    <li class="list-group-item">Neural Implicit Data Generation and Capture of 3D Scenes</li>
+                    <li class="list-group-item">Tactile and Deformable Object Manipulation Using Learnt Implicit Models
+                    </li>
+                    <li class="list-group-item">Physical an Dynamical Properties Estimation Based on Neural Field Models
+                    </li>
+                    <li class="list-group-item">...</li>
+                </ul>
+                The submitted 4-page abstracts will be peer-reviewed in ICRA format. Accepted abstracts will be made
+                non-archival public through this website,
+                and a portion of the accepted papers will be orally presented at the workshop.
+
+                <br>
+                <br>
+                <h4>&#128232; Submission</h4>
+                <br>
+                <br>
+
+                Paper submissions will be handled with OpenReview through the following link: <br>
+                <br>
+                Link TBD. <br>
+                <!-- <a href="https://cmt3.research.microsoft.com/C3DVCVPR2023">Microsoft CMT: C3DV-2023</a> <br> -->
+                <br>
+                <!-- Please select the appropriate track (<span class="fw-bold">archival</span> or <span
+                    class="fw-bold">non-archival</span>) and check for the relevant timelines in the <a
+                    href="#dates-section">dates section</a>.
+                <br>
+                <br> -->
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    <!-- /End Features Area -->
+
+    <!-- Start Speakers Area -->
+    <section class="speakers section" id="speakers-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">Speakers</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Invited
+                            Speakers</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="all-speakers">
+                <div class="row text-center justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/speakers-bohg.jpg"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="http://web.stanford.edu/~bohg/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=rjnJnEkAAAAJ&hl=en/">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="http://web.stanford.edu/~bohg/">Jeannette Bohg</a></h3>
+                                <span>Assistant Professor</span>
+                                <span>Stanford</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/angela.jpg"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="http://www.3dunderstanding.org/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=g-tGztMAAAAJ&hl=en">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="http://www.3dunderstanding.org/">Angela Dai</a></h3>
+                                <span>Assistant Professor</span>
+                                <span>Technical University of Munich</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/speakers-wang.jpg"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://xiaolonw.github.io/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=Y8O9N_0AAAAJ&hl=en">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://xiaolonw.github.io/">Xiaolong Wang</a></h3>
+                                <span>Assistant Professor</span>
+                                <span>University of California, San Diego</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row text-center justify-content-center">
+
+                    <!-- <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/speakers-pete.png"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://www.peteflorence.com/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=YfPA4YsAAAAJ&hl=en">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://www.peteflorence.com/">Pete Florence</a></h3>
+                                <span>Senior Research Scientist </span>
+                                <span>Google Deepmind</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/speakers-gaidon.png"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://adriengaidon.com/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=2StUgf4AAAAJ&hl=en">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://adriengaidon.com/">Adrien Gaidon</a></h3>
+                                <span>Head of Machine Learning</span>
+                                <span>Toyota Research Institute</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/speakers-finn.jpg"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://ai.stanford.edu/~cbfinn/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=vfPE6hgAAAAJ">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a></h3>
+                                <span>Assistant Professor </span>
+                                <span>Stanford University</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/yenchen.jpg"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://yenchenlin.me/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?hl=en&user=RbCKRPcAAAAJ">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://research.nvidia.com/labs/toronto-ai/author/alex-evans/">Yen-Chen
+                                        Lin</a></h3>
+                                <span>Research Sceintist</span>
+                                <span>Nvidia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Speaker Area -->
+
+    <!-- Start Workshop Organizers Area -->
+    <section class="speakers organizers section" id="organizers-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">Organizers</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Workshop
+                            Organizers</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="all-speakers">
+                <div class="row text-center justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/organizer-zubair.jpg"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://zubairirshad.com">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="https://www.linkedin.com/in/zubair-irshad/">
+                                            <i class="lni lni-linkedin-original">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=K2XA5XEAAAAJ&hl=en">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://zubairirshad.com">Zubair Irshad</a></h3>
+                                <span>PhD Candidate</span>
+                                <span>Georgia Institute of Technology</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/organizer-nick.jpeg"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://rl.uni-freiburg.de/people/heppert">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=btkVpywAAAAJ&hl=en">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://rl.uni-freiburg.de/people/heppert">Nick Heppert</a>
+                                </h3>
+                                <span>PhD Student</span>
+                                <span>University of Freiburg</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/organizer-john.jpg"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://research.nvidia.com/person/jonathan-tremblay">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.ca/citations?user=zeS5UJEAAAAJ&hl=en">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://research.nvidia.com/person/jonathan-tremblay">Jonathan Tremblay</a>
+                                </h3>
+                                <span>Research Scientist</span>
+                                <span>Nvidia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/organizer-shreyas.jpg"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://www.shreyaskousik.com/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=cb0xkZ4AAAAJ&hl=en&oi=ao">
+                                            <i class="lni lni-list"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://www.shreyaskousik.com/">Shreyas Kousik</a>
+                                </h3>
+                                <span>Assistant Professor</span>
+                                <span>Georgia Institute of Technology</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/organizer-srinath.jpg"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://cs.brown.edu/people/ssrinath/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="https://twitter.com/drsrinathsridha">
+                                            <i class="lni lni-twitter-original">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=qIvZT74AAAAJ&hl=en">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://cs.brown.edu/people/ssrinath/">Srinath Sridhar</a></h3>
+                                <span>Assistant Professor</span>
+                                <span>Brown University</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/ZsoltKira_pic.jpg"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://faculty.cc.gatech.edu/~zk15/">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=2a5XgNAAAAAJ&hl=en&oi=ao">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://faculty.cc.gatech.edu/~zk15/">Zsolt Kira</a>
+                                </h3>
+                                <span>Assistant Professor</span>
+                                <span>Georgia Tech</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                        <div class="single-speaker">
+                            <div class="top-content">
+                                <div class="image">
+                                    <img alt="#" src="images/organizer-valada.jpeg"
+                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                </div>
+                                <ul class="social">
+                                    <li class="home">
+                                        <a href="https://rl.uni-freiburg.de/people/valada">
+                                            <i class="lni lni-home">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="scholar">
+                                        <a href="https://scholar.google.com/citations?user=LcARjz0AAAAJ&hl=en">
+                                            <i class="lni lni-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="name">
+                                <h3><a href="https://rl.uni-freiburg.de/people/valada">Abhinav Valada</a>
+                                </h3>
+                                <span>Assistant Professor</span>
+                                <span>University of Freiburg</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Speaker Area -->
+
+    <!-- Start Challenge Area -->
+    <section class="events-schedule dates section" id="dates-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s"
+                            style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">Dates</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s"
+                            style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">Timeline</h2>
+
+                        <div class="tab-pane fade show active" id="date-wshop" role="tabpanel"
+                            aria-labelledby="wshop-tab">
+                            <h6>Non-archival track:</h6>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="event">Event</th>
+                                        <th class="date">Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Call for Papers</th>
+                                        <td>Jan 15, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Submission </th>
+                                        <td>Mar 12, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Notification</th>
+                                        <td>Apr 1, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Camera Ready</th>
+                                        <td>Apr 15, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Workshop</th>
+                                        <td>May 13, 2024</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-12">
+                    <div class="tab-content">
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- End Challenge Area -->
+
+    <!-- Start Schedule Area -->
+    <section class="events-schedule section" id="schedule-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">Program</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Workshop
+                            Program</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                            All invited talks, oral presentations and the panel discussion will take place in-person at
+                            ICRA
+                            in-person at Yokohama, Japan with support for remote participation.
+
+                            The tentative schedule can be found at in our submitted workshop proposal pdf and will be
+                            added here upon acceptance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-12">
+                    <div class="tab-content">
+                        <!-- Afternoon session -->
+                        <div class="tab-pane fade show active" id="three" role="tabpanel" aria-labelledby="three-tab">
+                            <!-- <div class="events-head">
+                                <div class="single-event">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-3 col-md-3 col-12">
+                                            <div class="date">
+                                                <h3>12:45</h3>
+                                                <p>Keynote<span>12:45 - 13:00</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-7 col-12">
+                                            <div class="event-info">
+                                                <div class="image">
+                                                    <img alt="#" src="images/speakers-poster.webp"
+                                                        onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                                                </div>
+                                                <div class="info">
+                                                    <h4>
+                                                        <a href="javascript:void(0)">Opening Remarks</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2 col-12">
+                                            <div class="button">
+                                                <a class="btn disabled" href="javascript:void(0)">Watch video</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                            <!-- Add other events here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Start Footer Action Area -->
+    <section class="call-action overlay">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+                    <div class="inner-content">
+                        <div class="text">
+                            <p class="wow fadeInUp" data-wow-delay=".6s">Website template adapted from <a
+                                    href="https://3dcompat-dataset.org/workshop/">C3DV</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Footer Action Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="js/js-bootstrap.min.js"></script>
+    <script src="js/js-wow.min.js"></script>
+    <script src="js/js-tiny-slider.js"></script>
+    <script src="js/js-count-up.min.js"></script>
+    <script src="js/js-main.js"></script>
+    <script>
+        const finaleDate = new Date("June 18, 2023 12:45:00").getTime();
+
+        const timer = () => {
+            const now = new Date().getTime();
+            let diff = finaleDate - now;
+            if (diff < 0) {
+                document.querySelector('.alert').style.display = 'block';
+                document.querySelector('.container').style.display = 'none';
+            }
+
+            let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            let hours = Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+            let minutes = Math.floor(diff % (1000 * 60 * 60) / (1000 * 60));
+            let seconds = Math.floor(diff % (1000 * 60) / 1000);
+
+            // days <= 99 ? days = `0${days}` : days;
+            // days <= 9 ? days = `00${days}` : days;
+            hours <= 9 ? hours = `0${hours}` : hours;
+            minutes <= 9 ? minutes = `0${minutes}` : minutes;
+            seconds <= 9 ? seconds = `0${seconds}` : seconds;
+
+            document.querySelector('#days').textContent = days;
+            document.querySelector('#hours').textContent = hours;
+            document.querySelector('#minutes').textContent = minutes;
+            document.querySelector('#seconds').textContent = seconds;
+
+        }
+        timer();
+        setInterval(timer, 1000);
+    </script>
+</body>
+
+</html>
